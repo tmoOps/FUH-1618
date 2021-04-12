@@ -1,5 +1,3 @@
-package tmoeller.ea01.Kontrollstrukturen;
-
 public class foo {
 
     public static void main(String[] args) {
