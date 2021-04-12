@@ -1,4 +1,4 @@
-package de.tmoeller.ea01.Kontrollstrukturen;
+package tmoeller.ea01.Kontrollstrukturen;
 
 public class foo {
 
