@@ -1,4 +1,4 @@
-package WundersameZahlen;
+package wundersameZahlen;
 
 public class Wundertest {
 
