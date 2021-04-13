@@ -1,4 +1,4 @@
-package GameofLife;
+package gameofLife;
 
 public class GameOfLife {
 
