@@ -1,4 +1,4 @@
-package Ausnahmebehandlung;
+package ausnahmebehandlung;
 
 public class ExceptionTest {
 
