@@ -1,4 +1,4 @@
-package Fallunterscheidungen;
+package fallunterscheidungen;
 
 import java.util.Arrays;
 
