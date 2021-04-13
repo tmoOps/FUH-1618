@@ -1,29 +1,41 @@
 package stapel;
 
-//package für LinkedList
+//package für LinkedList und NoSuchElementException
 import java.util.*;
 
 public class stack{
 
-	//stack - Aufgabe 02 aus EA02
-	//Implementierung eines Stacks mit den Methoden
-	//	push - legt ein Objekt auf den Stapel ab
-	//	peek - liefert eine Referenz auf das oberste Objekt im Stapel
-	//	pop - liefert eine Referenz auf das oberste Objekt auf den Stapel und entfernt es
-	//	isEmpty - liefert die Information, ob der Stapel leer ist
-	//
-	//	der Stack wird auf Basis einer LinkedList implementiert. Da der Stapel nur
-	//	String Objekte aufnehmen soll, wird die LinkedList für Strings allokiert
+	/*stack Implementierung - Aufgabe 02 aus EA02
 	
+		Implementierung eines Stacks mit den Methoden
+	
+		- push - legt ein Objekt auf den Stapel ab
+		- peek - liefert eine Referenz auf das oberste Objekt im Stapel
+		- pop - liefert eine Referenz auf das oberste Objekt auf den Stapel und entfernt es
+		- isEmpty - liefert die Information, ob der Stapel leer ist
+		
+		- toString - liefert eine Repräsentation des Stacks (alle Elemente) als String
+	
+		Anm. Der Stack wird auf Basis einer LinkedList implementiert.
+	*/
+	
+	//Vorinitialisierung der internen Datenstruktur (hier als Liste aus Stringelementen), 
+	// die für die Implementierung des Stacks intern genutzt wird. 
 	private LinkedList<String> stackImpl = new LinkedList<String>(); 
 	
 	//Konstruktor mit Übergabe von Elementen
 	stack( String[] collection ){
 		
+		// Initialisierung des Stacks erfolgt nur dann, wenn collection != null
 		if( collection != null ) {
 			
 			for( int i = 0; i < collection.length; i++ ) {
-				stackImpl.addFirst( collection[i] );
+				
+				//Initialisierung des Stacks erfolgt nur für Stringelemente aus der Collection, die nicht null sind
+				if( collection[i] != null) {
+					stackImpl.addFirst( collection[i] );
+				}//end if
+				
 			}//end for
 			
 		}//end if
@@ -109,7 +121,13 @@ public class stack{
 		//testrahmen
 		//-> 
 		try {
-			stack s1 = new stack( null );
+			String[] str1 = new String[5];
+			str1[3] = "test3";
+			//stack s1 = new stack( null );
+			stack s1 = new stack( str1 );
+			
+			boolean x = s1.isEmpty();
+			
 			System.out.println( s1.pop() );
 			System.out.println( s1.peek() );
 		}//end try
