@@ -137,6 +137,8 @@ public class stack{
 	
 	public String toString() {
 		//liefert die Stackelemente zurück, die auf dem Stack liegen
+		//Ausgabe erfolgt nach dem Schema:
+		//top: <oberstes Element>, -1: <Element eine Ebene tiefer>, ..., -x: <unterstes Element auf dem Stack>
 		
 		String res = new String();
 		String pos = "top: ";
