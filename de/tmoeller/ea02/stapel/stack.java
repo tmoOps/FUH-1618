@@ -29,13 +29,12 @@ public class stack{
 		private String element;
 		private Entry nextEntry;
 		
-		
 		Entry( String element, Entry nextEntry ){
 			this.element = element;
 			this.nextEntry = nextEntry;
-		}//end of constructor
-				
+		}//end of constructor		
 	}//end of class Entry
+	
 	
 	//Implementation of class stack
 	private Entry header = new Entry( null, null );
@@ -43,10 +42,8 @@ public class stack{
 	
 	
 	public stack() {
-		
 		//header Entry referenziert initial auf sich selbst
-		this.header.nextEntry = header;
-		
+		this.header.nextEntry = header;	
 	}//end of constructor stack
 	
 	
@@ -73,12 +70,9 @@ public class stack{
 					//Stacksize erhöhen
 					stackSize++;	
 						
-				}//end if
-							
-			}//end for
-					
+				}//end if							
+			}//end for					
 		}//end if
-				
 	}//end of constructor 	
 
 	
@@ -135,9 +129,9 @@ public class stack{
 			Entry newEntry = new Entry( s, header.nextEntry );
 			// Referenzierung aktualisieren
 			header.nextEntry = newEntry;
+			// StackSize erhöhen
 			stackSize++;
-		}//end if
-		
+		}//end if		
 	}//end push
 	
 	
@@ -162,9 +156,6 @@ public class stack{
 		}//end if
 		
 		return res;
-		
 	}//end toString
-	
-
 
 }//end of class Stack
