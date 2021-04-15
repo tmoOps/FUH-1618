@@ -6,42 +6,38 @@ import stapel.stack;
 public class myTest {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
-		String x1 = String.valueOf(3.0 / 4.0); 
-		System.out.println(x1);
-		String x2 = String.valueOf("Test"); 
-		String x3 = String.valueOf("Test"); 
-		System.out.println(x2 == x3);
-		String x4 = new String("Test"); 
-		System.out.println(x2 == x4);
-		String x5 = String.valueOf("Test");
-		
-		//testrahmen
+		//Test Beispiel mit Initialisierung
 		try {
-			String[] str1 = new String[5];
-			str1[3] = "test3";
-			//stack s1 = new stack( null );
-			stack s1 = new stack( str1 );
-				
-			boolean x = s1.isEmpty();
-			
-			System.out.println( s1.pop() );
-			System.out.println( s1.peek() );
+			String[] myCollection = { "Obj1", "Obj2", "Obj3", "Obj4", "Obj5" };
+
+			stack myStack = new stack( myCollection );
+			String res = new String();
+		
+			//Oberstes Stackelement abfragen
+			while( ! myStack.isEmpty()) {
+				res += myStack.pop() + " ";
+			}//end while
+		
+			System.out.println( res );
 		}//end try
-		catch( NoSuchElementException e ) {
-			System.out.println( e.getMessage());
+		catch ( NoSuchElementException e) {
+			System.out.println( e.getMessage() );
 		}//end catch
-					
-		String[] myCollection = { "Obj1", "Obj2", "Obj3", "Obj4", "Obj5" };
+			
+		//Test Beispiel ohne Initialisierung
+		try {
+			stack myStack2 = new stack();
+			myStack2.push( "test 0" );
+			myStack2.push( "test 1");
+			myStack2.push( "test 2");
+			myStack2.pop();
 				
-		stack myStack = new stack( myCollection );
-		System.out.println( myStack.pop());
-		myStack.push("Dummy1");
-		myStack.push("Dummy2");
-		System.out.println( "Element " + myStack.pop() + " vom Stack entfernt.");
-		myStack.push("Dummy3");
-		System.out.println( myStack.toString() );
+		    System.out.println( myStack2.toString() );
+		}//end try
+		catch( NoSuchElementException e) {
+			System.out.println( e.getMessage() );
+		}//end catch
 					
 	}//end of main
 
