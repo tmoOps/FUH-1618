@@ -116,8 +116,14 @@ public class BinaryTree {
 		
 		while( compareNode != nullNode ){
 			
+			//value Vergleich
 			if( value < compareNode.value ) {
 				
+				//wenn der unterste Knoten im linken Teilbaum
+				//erreicht wurde, dann neuen Blattknoten einfügen
+				//und abbrechen
+				//wenn unterster Knoten nicht erreicht wurden,
+				//dann weiter navigieren
 				if( compareNode.getLeft() == nullNode ) {
 					compareNode.setLeft( newNode );
 					return;
@@ -131,6 +137,11 @@ public class BinaryTree {
 				
 				if( value > compareNode.value ) {
 					
+					//wenn der unterste Knoten im rechten Teilbaum
+					//erreicht wurde, dann neuen Blattknoten einfügen
+					//und abbrechen
+					//wenn unterster Knoten nicht erreicht wurden,
+					//dann weiter navigieren
 					if( compareNode.getRight() == nullNode ) {
 						compareNode.setRight( newNode );
 						return;
@@ -140,7 +151,7 @@ public class BinaryTree {
 					}//end else
 										
 				}//end if
-				else {
+				else { //bei Gleichheit abbrechen
 				  return;
 				}//end else
 			
@@ -152,7 +163,7 @@ public class BinaryTree {
 		
 	}//end of insert
 		
-	
+	//Hilfsfunktion für inorder
 	private void inorderRek( BinaryNode k ) {
 		//rekursives Durchlaufen des Baumes
 		if( k != nullNode ) {
