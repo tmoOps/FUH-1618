@@ -81,9 +81,27 @@ public class BinaryTree {
 		 * in 2 Teilbäume
 		 * 
 		 */
+		boolean found = false;
 		
+		BinaryNode searchNode = root;
 		
-		return true;
+		while ( searchNode != nullNode ) {
+			
+			if( searchNode.value == value )
+				return true;
+			
+			if( searchNode.value < value ) {
+				searchNode = searchNode.getRight();
+			}//end if
+			else {
+				if( searchNode.value > value )
+					searchNode = searchNode.getLeft();
+			}//end else
+			
+		}//end while
+				
+		return false;
+		
 	}//end of contains
 	
 	
