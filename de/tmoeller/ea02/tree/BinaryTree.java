@@ -72,14 +72,11 @@ public class BinaryTree {
 	
 	public boolean contains (int value) {
 		
-		/* Idee
-		 * Baum rekursiv durchlaufen und den Inhalt
-		 * eines Knotens mit value vergleichen
-		 * 
-		 * Traversierung beginnt immer an der Wurzel root
-		 * von dort verästelt sich der Baum nach links und rechts
-		 * in 2 Teilbäume
-		 * 
+		/* 
+		 * Suche startet bei Root und durchläuft den Baum
+		 * gemäß der definierten Ordnung. Im linken Teilbaum sind
+		 * alle Werte kleiner als root.value. Im rechten Teilbaum
+		 * sind alle Werte größer als root.value
 		 */
 		boolean found = false;
 		
