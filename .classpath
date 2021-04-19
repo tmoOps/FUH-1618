@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry excluding="Kontrollstrukturen/" kind="src" path="de/tmoeller/ea01"/>
 	<classpathentry kind="src" path="de/tmoeller/ea02"/>
+	<classpathentry kind="src" path="de/tmoeller/adHoc"/>
 	<classpathentry kind="output" path="out/production/FUH-1618"/>
 </classpath>
