@@ -11,7 +11,7 @@ public class AH02_2 {
 		private int denominator;
 		
 		public Fraction( int nominator, int denominator)
-			/*throws IllegalArgumentException*/{
+			throws IllegalArgumentException{
 			
 			if( denominator == 0) {
 				throw new NoSuchElementException( "Nenner ist gleich 0 !");
