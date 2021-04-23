@@ -5,7 +5,7 @@ public class TestTree {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		BinaryTree myTree = new BinaryTree(6);
+		BinaryTree2 myTree = new BinaryTree2(6);
 		myTree.insert(5);
 		myTree.insert(4);
 		myTree.insert(12);
