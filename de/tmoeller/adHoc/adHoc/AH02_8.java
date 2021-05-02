@@ -65,6 +65,7 @@ public class AH02_8 {
 		ncwm.store( iMin );
 		ncwm.store( sMax );
 		ncwm.store( pi );
+		ncwm.store( null );
 
 		int abc = Integer.valueOf(iMin);
 				
