@@ -3,7 +3,7 @@ package stapel;
 //package für LinkedList und NoSuchElementException
 import java.util.*;
 
-public class stack{
+public class stack2{
 
 	/*stack Implementierung - Aufgabe 02 aus EA02
 	
@@ -24,7 +24,7 @@ public class stack{
 	private LinkedList<String> stackImpl = new LinkedList<String>(); 
 	
 	//Konstruktor mit Übergabe von Elementen
-	public stack( String[] collection ){
+	public stack2( String[] collection ){
 		
 		// Initialisierung des Stacks erfolgt nur dann, wenn collection != null
 		if( collection != null ) {

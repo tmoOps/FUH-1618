@@ -10,8 +10,8 @@ public class ST02_1 {
 		Person p1 = new Person("Will Mustermann");
 		Person p2 = new Person("tmo");
 		Cat c1 = new Cat();
-		Book b1 = new Book("SÃ¤ulen der Erde");
-		Book b2 = new Book("Java fÃ¼r AnfÃ¤nger");
+		Book b1 = new Book("Säulen der Erde");
+		Book b2 = new Book("Java für Anfänger");
 		
 		PrintableList pl = new PrintableList();
 		pl.addLast( p1 );
