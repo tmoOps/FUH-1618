@@ -80,9 +80,6 @@ public class AnimalInformationSystem {
 			tier.druckeEigenschaften();
 		}//end else
 		
-		
-		Pinguin p = new Pinguin();
-		p.druckeEigenschaften();
 			
 	}//end main
 
