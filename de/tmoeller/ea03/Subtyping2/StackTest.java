@@ -1,5 +1,9 @@
 package Subtyping2;
 
+/**
+ * @author kokol
+ *
+ */
 public class StackTest {
 
 	public static void main(String[] args) {
