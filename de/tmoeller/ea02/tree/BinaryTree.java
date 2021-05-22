@@ -78,8 +78,7 @@ public class BinaryTree {
 		 * alle Werte kleiner als root.value. Im rechten Teilbaum
 		 * sind alle Werte größer als root.value
 		 */
-		boolean found = false;
-		
+			
 		BinaryNode searchNode = root;
 		
 		while ( searchNode != nullNode ) {

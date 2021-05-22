@@ -6,7 +6,6 @@ public class BinaryTree2 {
 		private BinaryNode leftSon, rightSon;
 		
 		private int value;
-		private String sequence = new String();
 		
 		BinaryNode(int value) {
 			this.value = value;		
@@ -48,7 +47,6 @@ public class BinaryTree2 {
 	
 	
 	private BinaryNode root, nullNode;
-	private String resStr;
 	
 	public BinaryTree2() {
 		/* erzeugen eines leeren Baums */		
@@ -74,9 +72,8 @@ public class BinaryTree2 {
 		 * alle Werte kleiner als root.value. Im rechten Teilbaum
 		 * sind alle Werte größer als root.value
 		 */
-		boolean found = false;
 		
-		BinaryNode searchNode = root;
+		BinaryNode searchNode = root, nullNode;
 		
 		while ( searchNode != null ) {
 			

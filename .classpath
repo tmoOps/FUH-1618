@@ -10,5 +10,7 @@
 	<classpathentry kind="src" path="de/tmoeller/adHoc"/>
 	<classpathentry kind="src" path="de/tmoeller/selftest"/>
 	<classpathentry kind="src" path="de/tmoeller/ea03"/>
+	<classpathentry kind="src" path="de/tmoeller/ea04"/>
+	<classpathentry kind="src" path="de/tmoeller/tryOuts"/>
 	<classpathentry kind="output" path="out/production/FUH-1618"/>
 </classpath>
