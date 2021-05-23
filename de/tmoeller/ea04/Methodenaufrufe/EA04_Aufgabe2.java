@@ -13,6 +13,13 @@ public class EA04_Aufgabe2 {
         List<Tier> tierList = null;
         Tier[] tierArray = new Kuh[2];
         Kuh[] kuhArray = new Kuh[5];
+       
+        /*
+        Kuh k = new Kuh();
+        List<Tier> tl = new ArrayList<Tier>();
+        tl.add(k);
+        */   
+        
         //List<String> stringList = null;
         
         s1.m(tierArray, tierList); // Aufruf A1

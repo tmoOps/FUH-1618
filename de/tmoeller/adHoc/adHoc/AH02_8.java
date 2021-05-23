@@ -67,7 +67,7 @@ public class AH02_8 {
 		ncwm.store( pi );
 		ncwm.store( null );
 
-		int abc = Integer.valueOf(iMin);
+		//int abc = Integer.valueOf(iMin);
 				
 		Number myMax = ncwm.getMaximum();
 		

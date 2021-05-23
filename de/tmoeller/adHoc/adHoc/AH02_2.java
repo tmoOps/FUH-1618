@@ -1,6 +1,5 @@
 package adHoc;
 
-import java.lang.*;
 import java.util.*;
 
 public class AH02_2 {

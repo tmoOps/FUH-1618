@@ -1,7 +1,5 @@
 package selftest;
 
-import java.util.*;
-
 interface Printable {
 	void print();
 }//end of interface printable

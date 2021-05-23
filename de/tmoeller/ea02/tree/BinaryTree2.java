@@ -73,7 +73,7 @@ public class BinaryTree2 {
 		 * sind alle Werte größer als root.value
 		 */
 		
-		BinaryNode searchNode = root, nullNode;
+		BinaryNode searchNode = root;
 		
 		while ( searchNode != null ) {
 			

@@ -33,22 +33,38 @@ public class SerialisierungTest {
 		ObjectOutputStream oos2 = new ObjectOutputStream(new FileOutputStream("foo2"));
 		oos2.writeObject(n7);
 		oos2.close();
-		root = new Node("root");
+		//root = new Node("root");
+		Node root1 = new Node("root");
 		ObjectInputStream ois1 = new ObjectInputStream(new FileInputStream("foo1"));
-		root.addEdgeTo((Node) ois1.readObject());
-		ois1.close();
+		root1.addEdgeTo((Node) ois1.readObject());
+		ois1.close();	
 		ObjectInputStream ois2 = new ObjectInputStream(new FileInputStream("foo2"));
-		root.addEdgeTo((Node) ois2.readObject());
+		root1.addEdgeTo((Node) ois2.readObject());
 		ois2.close();
+						
+		ListIterator<Node> iter = root1.edgesTo.listIterator();
+		System.out.println( "Anzahl Elements in list = " +  root1.edgesTo.size() );
+	
+		while( iter.hasNext() ) {
+	
+			System.out.println( "Next-index = " + iter.nextIndex() + "Prev-Index = " + iter.previousIndex() );
+		
+			Node current = iter.next();
+			System.out.println( current.value );
+			System.out.println( current.edgesTo.toString() );
+		}
+		
 		/*2*/
 		}
 }
 
 class Node implements Serializable{
-	private static final long serialVersionUID = 1L;
+
+	private static final long serialVersionUID = 2328538928568782249L;
+
 	String value;
 
-	private List<Node> edgesTo = new ArrayList<Node>();
+	public List<Node> edgesTo = new ArrayList<Node>();
 
 	public Node(String value) {
 		this.value = value;

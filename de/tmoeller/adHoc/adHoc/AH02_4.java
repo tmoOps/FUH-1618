@@ -36,6 +36,11 @@ class PlasticCar extends Toy {
 
 class NoSuchToyException extends Exception{
 		
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public NoSuchToyException( String msg ) {
 		super( msg );
 	}//end of constructor
