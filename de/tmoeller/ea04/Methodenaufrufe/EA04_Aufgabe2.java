@@ -18,25 +18,25 @@ public class EA04_Aufgabe2 {
         s1.m(tierArray, tierList); // Aufruf A1
         //s2.m(tierArray, stringList);
         s1.m(kuhArray, kuhList);   // Aufruf A2
-        //s1.m(tierArray, kuhList);  // Aufruf A3
-        //s1.m(kuhArray, tierList);  // Aufruf A4
+//        s1.m(tierArray, kuhList);  // Aufruf A3
+        
+//       s1.m(kuhArray, tierList);  // Aufruf A4 *****
 
         s2.m(tierArray, tierList); // Aufruf A5
         s2.m(kuhArray, kuhList);   // Aufruf A6
         s2.m(tierArray, kuhList);  // Aufruf A7
-        //s2.m(kuhArray, tierList);  // Aufruf A8
+//        s2.m(kuhArray, tierList);  // Aufruf A8 ****
         
 	}
 
 }
 
 class Super {
-     
+    
 	void m(Tier[] p1, List<Tier> p2) {
          System.out.println("M1");
-     }
+     }   
     
-     
      void m(Kuh[] p1, List<? extends Tier> p2) {
          System.out.println("M2");
      }
@@ -52,11 +52,10 @@ class Sub extends Super {
          System.out.println("M4");
      }
 
-     /*
+    
      void m(Kuh[] p1, List<? extends Tier> p2) {
          System.out.println("M5");
      }
-*/
 }
 
 class Lebewesen { }
