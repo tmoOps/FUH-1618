@@ -25,4 +25,8 @@ public class Person {
     	return name;
     }//end getName
     
+    public int getWeight() {
+    	return birthday;
+    }
+    
 }//end class Person
