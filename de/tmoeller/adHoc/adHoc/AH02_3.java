@@ -1,8 +1,5 @@
 package adHoc;
 
-import java.util.*;
-
-
 public class AH02_3 {
 
 	public static void main(String[] args) {

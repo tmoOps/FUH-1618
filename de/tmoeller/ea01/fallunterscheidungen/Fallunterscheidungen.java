@@ -1,7 +1,5 @@
 package fallunterscheidungen;
 
-import java.util.Arrays;
-
 public class Fallunterscheidungen {
 
     public static void main(String[] args) {

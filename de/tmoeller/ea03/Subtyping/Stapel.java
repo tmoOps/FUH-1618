@@ -1,7 +1,5 @@
 package Subtyping;
 
-import java.util.*;
-
 class ListWithInternalArray{
 	
 	private Object[] ArrayImpl; 
