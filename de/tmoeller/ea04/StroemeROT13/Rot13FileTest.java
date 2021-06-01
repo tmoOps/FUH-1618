@@ -4,15 +4,15 @@ import java.io.*;
 
 class Adapter implements CharEingabeStrom{
 	
-	private InputStreamReader isr;
+	private Reader r;
 	
-	public Adapter( InputStreamReader isr) {
-		this.isr = isr;
+	public Adapter( Reader isr) {
+		this.r = isr;
 	}//end constructor
 
 	@Override
     public int read() throws IOException {
-		return isr.read();
+		return r.read();
 	}//read
 	
 }//end Adapter
