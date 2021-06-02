@@ -4,7 +4,7 @@ import java.awt.*;
 import java.awt.event.*;
 
 
-//beide Listener Methoden implementieren für Button und für das Hauptfenster (Frame)
+//beide Listener Methoden implementieren fuer Button und fuer das Hauptfenster (Frame)
 class ProgramExitClause extends WindowAdapter implements ActionListener {
 	
 	@Override
@@ -44,5 +44,4 @@ public class EA0506_OneExitClause {
 		f.setLocationRelativeTo(null);
 		f.setVisible(true);
 	}
-
 }

@@ -3,27 +3,6 @@ package EA05adhoc;
 import java.awt.*;
 import java.awt.event.*;
 
-class BaseFrame extends Frame {
-	
-	private static final long serialVersionUID = -8480567910224491104L;
-
-	public BaseFrame() {
-		//ClosingBeaobachter als anonyme Klasse direkt im Konstruktor
-		//implementieren
-		addWindowListener( new WindowAdapter() {
-			public void windowClosing(WindowEvent e) {
-				System.exit(0);
-			}
-		});
-	
-		setSize( 300, 400 );
-
-		setLocationRelativeTo(null); //Parameter Null plaziert den Frame
-									 //in der Mitte des Screens
-	}//end constructor
-	
-}//end BaseFrame
-
 public class BaseFrameTest {
 
 	public static void main(String[] args) {
