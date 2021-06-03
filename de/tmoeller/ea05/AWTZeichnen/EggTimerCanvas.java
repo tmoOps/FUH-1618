@@ -27,13 +27,13 @@ public class EggTimerCanvas extends Canvas {
 		//Der obere rote Kreis wird anteilig um die vergangenen Sekunden in
 		//der Gradzahl gekürzt, also 360 Grad - anteiliger Kürzung
 		//die Kürzung kann berechnet werden über das Modell
-		//(etm.getElapsedPart() * 60 * 360)/60
+		//etm.getElapsedPart() * 360
 		
 		g.setColor(Color.GREEN);
 		g.fillArc( 10, 10, diameter, diameter, 0, 360 );
 		
 		g.setColor( Color.RED);
-		correctionFactor = (etm.getElapsedPart()*60*360)/60;
+		correctionFactor = etm.getElapsedPart()*360;
 		
 		g.fillArc( 10, 10, diameter, diameter, 90, 360 - (int)correctionFactor );
 		
